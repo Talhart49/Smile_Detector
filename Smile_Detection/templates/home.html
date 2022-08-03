@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smile Detector</title>
+    <style>
+      body {
+        background-image: url("https://cdn.wallpapersafari.com/49/59/RHX7Wt.jpg");
+        color: rgb(156, 126, 126);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 13%;
+      }
+      button {
+        padding: 12px;
+        font-size: 17px;
+        background-color: rgb(124, 103, 103);
+        width: 10%;
+        margin: auto;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        border-radius: 15px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h2>Press the Button to Start The Smile Detector</h2>
+      <button onclick="location.href='{% url 'script' %}'">
+        Execute Script
+      </button>
+    </div>
+  </body>
+</html>
